@@ -1,0 +1,173 @@
+building category,building system,sub system,component,item
+commercial,air conditioning system,air conditioning,air duct,plastic_air duct material weights
+commercial,air conditioning system,air conditioning,air duct,steel_air duct material weights
+commercial,air conditioning system,air conditioning,air duct,polyurethane foam_air duct material weights
+commercial,air conditioning system,air conditioning,air duct,mineral wool_air duct material weights
+commercial,air conditioning system,air conditioning,air duct,fiberglass_air duct material weights
+commercial,air conditioning system,air conditioning,air duct,aluminum_air duct material weights
+commercial,electrical system,electrical wiring and cables,electrical cable,copper_electrical cable material weights
+commercial,electrical system,electrical wiring and cables,electrical cable,pvc_electrical cable material weights
+commercial,heating system,heating,heat pump,plastic_heat pump material weights
+commercial,heating system,heating,heat pump,copper_heat pump material weights
+commercial,heating system,heating,heat pump,refrigerant_heat pump material weights
+commercial,heating system,heating,heat pump,steel_heat pump material weights
+commercial,heating system,heating,heat pump,aluminum_heat pump material weights
+commercial,plumbing system,drainage and waste pipes,water pipe,steel_water pipe material weights
+commercial,plumbing system,drainage and waste pipes,water pipe,copper_water pipe material weights
+commercial,plumbing system,drainage and waste pipes,water pipe,pex_water pipe material weights
+commercial,plumbing system,drainage and waste pipes,water pipe,zinc coating_water pipe material weights
+commercial,plumbing system,plumbing fixtures,bathtub,cast iron_bathtub material weights
+commercial,plumbing system,plumbing fixtures,bathtub,acrylic_bathtub material weights
+commercial,plumbing system,plumbing fixtures,bathtub,plastic_bathtub material weights
+commercial,plumbing system,plumbing fixtures,shower,stainless steel_shower material weights
+commercial,plumbing system,plumbing fixtures,shower,glass_shower material weights
+commercial,plumbing system,plumbing fixtures,shower,plastic_shower material weights
+commercial,plumbing system,plumbing fixtures,sink,stainless steel_sink material weights
+commercial,plumbing system,plumbing fixtures,sink,porcelain_sink material weights
+commercial,plumbing system,plumbing fixtures,sink,plastic_sink material weights
+commercial,plumbing system,plumbing fixtures,toilet,stainless steel_toilet material weights
+commercial,plumbing system,plumbing fixtures,toilet,porcelain_toilet material weights
+commercial,plumbing system,plumbing fixtures,toilet,plastic_toilet material weights
+commercial,plumbing system,water heaters,boiler,other electronics_boiler material weights
+commercial,plumbing system,water heaters,boiler,plastic_boiler material weights
+commercial,plumbing system,water heaters,boiler,copper_boiler material weights
+commercial,plumbing system,water heaters,boiler,steel_boiler material weights
+commercial,plumbing system,water heaters,boiler,mineral wool_boiler material weights
+commercial,plumbing system,water heaters,boiler,brass_boiler material weights
+commercial,plumbing system,water heaters,boiler,aluminum_boiler material weights
+commercial,plumbing system,water supply pipes and fixtures,water pipe,steel_water pipe material weights
+commercial,plumbing system,water supply pipes and fixtures,water pipe,copper_water pipe material weights
+commercial,plumbing system,water supply pipes and fixtures,water pipe,pex_water pipe material weights
+commercial,plumbing system,water supply pipes and fixtures,water pipe,zinc coating_water pipe material weights
+commercial,ventilation system,ventilation,air duct,plastic_air duct material weights
+commercial,ventilation system,ventilation,air duct,steel_air duct material weights
+commercial,ventilation system,ventilation,air duct,polyurethane foam_air duct material weights
+commercial,ventilation system,ventilation,air duct,mineral wool_air duct material weights
+commercial,ventilation system,ventilation,air duct,fiberglass_air duct material weights
+commercial,ventilation system,ventilation,air duct,aluminum_air duct material weights
+institutional,air conditioning system,air conditioning,air duct,plastic_air duct material weights
+institutional,air conditioning system,air conditioning,air duct,steel_air duct material weights
+institutional,air conditioning system,air conditioning,air duct,polyurethane foam_air duct material weights
+institutional,air conditioning system,air conditioning,air duct,mineral wool_air duct material weights
+institutional,air conditioning system,air conditioning,air duct,fiberglass_air duct material weights
+institutional,air conditioning system,air conditioning,air duct,aluminum_air duct material weights
+institutional,electrical system,electrical wiring and cables,electrical cable,copper_electrical cable material weights
+institutional,electrical system,electrical wiring and cables,electrical cable,pvc_electrical cable material weights
+institutional,heating system,heating,heat pump,plastic_heat pump material weights
+institutional,heating system,heating,heat pump,copper_heat pump material weights
+institutional,heating system,heating,heat pump,refrigerant_heat pump material weights
+institutional,heating system,heating,heat pump,steel_heat pump material weights
+institutional,heating system,heating,heat pump,aluminum_heat pump material weights
+institutional,plumbing system,drainage and waste pipes,water pipe,steel_water pipe material weights
+institutional,plumbing system,drainage and waste pipes,water pipe,copper_water pipe material weights
+institutional,plumbing system,drainage and waste pipes,water pipe,pex_water pipe material weights
+institutional,plumbing system,drainage and waste pipes,water pipe,zinc coating_water pipe material weights
+institutional,plumbing system,plumbing fixtures,bathtub,cast iron_bathtub material weights
+institutional,plumbing system,plumbing fixtures,bathtub,acrylic_bathtub material weights
+institutional,plumbing system,plumbing fixtures,bathtub,plastic_bathtub material weights
+institutional,plumbing system,plumbing fixtures,shower,stainless steel_shower material weights
+institutional,plumbing system,plumbing fixtures,shower,glass_shower material weights
+institutional,plumbing system,plumbing fixtures,shower,plastic_shower material weights
+institutional,plumbing system,plumbing fixtures,sink,stainless steel_sink material weights
+institutional,plumbing system,plumbing fixtures,sink,porcelain_sink material weights
+institutional,plumbing system,plumbing fixtures,sink,plastic_sink material weights
+institutional,plumbing system,plumbing fixtures,toilet,stainless steel_toilet material weights
+institutional,plumbing system,plumbing fixtures,toilet,porcelain_toilet material weights
+institutional,plumbing system,plumbing fixtures,toilet,plastic_toilet material weights
+institutional,plumbing system,water heaters,boiler,other electronics_boiler material weights
+institutional,plumbing system,water heaters,boiler,plastic_boiler material weights
+institutional,plumbing system,water heaters,boiler,copper_boiler material weights
+institutional,plumbing system,water heaters,boiler,steel_boiler material weights
+institutional,plumbing system,water heaters,boiler,mineral wool_boiler material weights
+institutional,plumbing system,water heaters,boiler,brass_boiler material weights
+institutional,plumbing system,water heaters,boiler,aluminum_boiler material weights
+institutional,plumbing system,water supply pipes and fixtures,water pipe,steel_water pipe material weights
+institutional,plumbing system,water supply pipes and fixtures,water pipe,copper_water pipe material weights
+institutional,plumbing system,water supply pipes and fixtures,water pipe,pex_water pipe material weights
+institutional,plumbing system,water supply pipes and fixtures,water pipe,zinc coating_water pipe material weights
+institutional,ventilation system,ventilation,air duct,plastic_air duct material weights
+institutional,ventilation system,ventilation,air duct,steel_air duct material weights
+institutional,ventilation system,ventilation,air duct,polyurethane foam_air duct material weights
+institutional,ventilation system,ventilation,air duct,mineral wool_air duct material weights
+institutional,ventilation system,ventilation,air duct,fiberglass_air duct material weights
+institutional,ventilation system,ventilation,air duct,aluminum_air duct material weights
+other,electrical system,electrical wiring and cables,electrical cable,copper_electrical cable material weights
+other,electrical system,electrical wiring and cables,electrical cable,pvc_electrical cable material weights
+other,heating system,heating,heat pump,plastic_heat pump material weights
+other,heating system,heating,heat pump,copper_heat pump material weights
+other,heating system,heating,heat pump,refrigerant_heat pump material weights
+other,heating system,heating,heat pump,steel_heat pump material weights
+other,heating system,heating,heat pump,aluminum_heat pump material weights
+other,plumbing system,drainage and waste pipes,water pipe,steel_water pipe material weights
+other,plumbing system,drainage and waste pipes,water pipe,copper_water pipe material weights
+other,plumbing system,drainage and waste pipes,water pipe,pex_water pipe material weights
+other,plumbing system,drainage and waste pipes,water pipe,zinc coating_water pipe material weights
+other,plumbing system,plumbing fixtures,bathtub,cast iron_bathtub material weights
+other,plumbing system,plumbing fixtures,bathtub,acrylic_bathtub material weights
+other,plumbing system,plumbing fixtures,bathtub,plastic_bathtub material weights
+other,plumbing system,plumbing fixtures,shower,stainless steel_shower material weights
+other,plumbing system,plumbing fixtures,shower,glass_shower material weights
+other,plumbing system,plumbing fixtures,shower,plastic_shower material weights
+other,plumbing system,plumbing fixtures,sink,stainless steel_sink material weights
+other,plumbing system,plumbing fixtures,sink,porcelain_sink material weights
+other,plumbing system,plumbing fixtures,sink,plastic_sink material weights
+other,plumbing system,plumbing fixtures,toilet,stainless steel_toilet material weights
+other,plumbing system,plumbing fixtures,toilet,porcelain_toilet material weights
+other,plumbing system,plumbing fixtures,toilet,plastic_toilet material weights
+other,plumbing system,water heaters,boiler,other electronics_boiler material weights
+other,plumbing system,water heaters,boiler,plastic_boiler material weights
+other,plumbing system,water heaters,boiler,copper_boiler material weights
+other,plumbing system,water heaters,boiler,steel_boiler material weights
+other,plumbing system,water heaters,boiler,mineral wool_boiler material weights
+other,plumbing system,water heaters,boiler,brass_boiler material weights
+other,plumbing system,water heaters,boiler,aluminum_boiler material weights
+other,plumbing system,water supply pipes and fixtures,water pipe,steel_water pipe material weights
+other,plumbing system,water supply pipes and fixtures,water pipe,copper_water pipe material weights
+other,plumbing system,water supply pipes and fixtures,water pipe,pex_water pipe material weights
+other,plumbing system,water supply pipes and fixtures,water pipe,zinc coating_water pipe material weights
+residential,electrical system,electrical wiring and cables,electrical cable,copper_electrical cable material weights
+residential,electrical system,electrical wiring and cables,electrical cable,pvc_electrical cable material weights
+residential,heating system,heating,boiler,other electronics_boiler material weights
+residential,heating system,heating,boiler,plastic_boiler material weights
+residential,heating system,heating,boiler,copper_boiler material weights
+residential,heating system,heating,boiler,steel_boiler material weights
+residential,heating system,heating,boiler,mineral wool_boiler material weights
+residential,heating system,heating,boiler,brass_boiler material weights
+residential,heating system,heating,boiler,aluminum_boiler material weights
+residential,heating system,heating,heat pump,plastic_heat pump material weights
+residential,heating system,heating,heat pump,copper_heat pump material weights
+residential,heating system,heating,heat pump,refrigerant_heat pump material weights
+residential,heating system,heating,heat pump,steel_heat pump material weights
+residential,heating system,heating,heat pump,aluminum_heat pump material weights
+residential,heating system,heating,radiator,plastic_radiator material weights
+residential,heating system,heating,radiator,total_weight_radiator material weights
+residential,heating system,heating,radiator,copper_radiator material weights
+residential,heating system,heating,radiator,cast iron_radiator material weights
+residential,heating system,heating,radiator,steel_radiator material weights
+residential,plumbing system,drainage and waste pipes,water pipe,steel_water pipe material weights
+residential,plumbing system,drainage and waste pipes,water pipe,copper_water pipe material weights
+residential,plumbing system,drainage and waste pipes,water pipe,pex_water pipe material weights
+residential,plumbing system,drainage and waste pipes,water pipe,zinc coating_water pipe material weights
+residential,plumbing system,plumbing fixtures,bathtub,cast iron_bathtub material weights
+residential,plumbing system,plumbing fixtures,bathtub,acrylic_bathtub material weights
+residential,plumbing system,plumbing fixtures,bathtub,plastic_bathtub material weights
+residential,plumbing system,plumbing fixtures,shower,stainless steel_shower material weights
+residential,plumbing system,plumbing fixtures,shower,glass_shower material weights
+residential,plumbing system,plumbing fixtures,shower,plastic_shower material weights
+residential,plumbing system,plumbing fixtures,sink,stainless steel_sink material weights
+residential,plumbing system,plumbing fixtures,sink,porcelain_sink material weights
+residential,plumbing system,plumbing fixtures,sink,plastic_sink material weights
+residential,plumbing system,plumbing fixtures,toilet,stainless steel_toilet material weights
+residential,plumbing system,plumbing fixtures,toilet,porcelain_toilet material weights
+residential,plumbing system,plumbing fixtures,toilet,plastic_toilet material weights
+residential,plumbing system,water heaters,boiler,other electronics_boiler material weights
+residential,plumbing system,water heaters,boiler,plastic_boiler material weights
+residential,plumbing system,water heaters,boiler,copper_boiler material weights
+residential,plumbing system,water heaters,boiler,steel_boiler material weights
+residential,plumbing system,water heaters,boiler,mineral wool_boiler material weights
+residential,plumbing system,water heaters,boiler,brass_boiler material weights
+residential,plumbing system,water heaters,boiler,aluminum_boiler material weights
+residential,plumbing system,water supply pipes and fixtures,water pipe,steel_water pipe material weights
+residential,plumbing system,water supply pipes and fixtures,water pipe,copper_water pipe material weights
+residential,plumbing system,water supply pipes and fixtures,water pipe,pex_water pipe material weights
+residential,plumbing system,water supply pipes and fixtures,water pipe,zinc coating_water pipe material weights

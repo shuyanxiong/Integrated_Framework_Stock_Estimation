@@ -1,0 +1,59 @@
+﻿building system,sub system,component,commercial,institutional,residential,other
+heating system,heating,radiator,FALSE,FALSE,TRUE,FALSE
+heating system,heating,boiler,FALSE,FALSE,TRUE,FALSE
+heating system,heating,heat pump,TRUE,TRUE,TRUE,TRUE
+heating system,heating,thermostat,FALSE,FALSE,TRUE,FALSE
+ventilation system,ventilation,air duct,TRUE,TRUE,FALSE,FALSE
+ventilation system,ventilation,fan,TRUE,TRUE,FALSE,FALSE
+ventilation system,ventilation,air filter,TRUE,TRUE,FALSE,FALSE
+ventilation system,ventilation,exhaust vent,TRUE,TRUE,FALSE,FALSE
+ventilation system,ventilation,air intake vent,TRUE,TRUE,FALSE,FALSE
+air conditioning system,air conditioning,compressor and condenser unit,TRUE,TRUE,FALSE,FALSE
+air conditioning system,air conditioning,evaporator coil,TRUE,TRUE,FALSE,FALSE
+air conditioning system,air conditioning,refrigerant lines,TRUE,TRUE,FALSE,FALSE
+air conditioning system,air conditioning,air duct,TRUE,TRUE,FALSE,FALSE
+air conditioning system,air conditioning,thermostat,TRUE,TRUE,FALSE,FALSE
+air conditioning system,air conditioning,drainage system,TRUE,TRUE,FALSE,FALSE
+building automation system (BAS),building automation system (BAS),control system,TRUE,TRUE,FALSE,FALSE
+building automation system (BAS),building automation system (BAS),sensor,TRUE,TRUE,FALSE,FALSE
+building automation system (BAS),building automation system (BAS),actuator,TRUE,TRUE,FALSE,FALSE
+building automation system (BAS),building automation system (BAS),networked communication system,TRUE,TRUE,FALSE,FALSE
+building automation system (BAS),building automation system (BAS),user interface,TRUE,TRUE,FALSE,FALSE
+plumbing system,water supply pipes and fixtures,water pipe,TRUE,TRUE,TRUE,TRUE
+plumbing system,drainage and waste pipes,water pipe,TRUE,TRUE,TRUE,TRUE
+plumbing system,water heaters,boiler,TRUE,TRUE,TRUE,TRUE
+plumbing system,plumbing fixtures,toilet,TRUE,TRUE,TRUE,TRUE
+plumbing system,plumbing fixtures,sink,TRUE,TRUE,TRUE,TRUE
+plumbing system,plumbing fixtures,shower,TRUE,TRUE,TRUE,TRUE
+plumbing system,plumbing fixtures,bathtub,TRUE,TRUE,TRUE,TRUE
+plumbing system,valves and controls,valve,TRUE,TRUE,TRUE,TRUE
+plumbing system,valves and controls,pump,TRUE,TRUE,TRUE,TRUE
+electrical system,electrical wiring and cables,electrical cable,TRUE,TRUE,TRUE,TRUE
+electrical system,electrical wiring and cables,electrical panel,TRUE,TRUE,TRUE,TRUE
+electrical system,main electrical service panel and breakers,circuit breakers and fuses,TRUE,TRUE,TRUE,TRUE
+electrical system,electrical outlets and switches,outlet,TRUE,TRUE,TRUE,TRUE
+electrical system,lighting fixture and bulb,lighting,TRUE,TRUE,TRUE,TRUE
+electrical system,lighting fixture and bulb,bulb,TRUE,TRUE,TRUE,TRUE
+structural system,foundation,foundation,TRUE,TRUE,TRUE,TRUE
+structural system,framing,column,TRUE,TRUE,TRUE,TRUE
+structural system,framing,beam,TRUE,TRUE,TRUE,TRUE
+structural system,framing,truss,TRUE,TRUE,TRUE,TRUE
+structural system,wall,interior wall,TRUE,TRUE,TRUE,TRUE
+structural system,wall,exterior wall,TRUE,TRUE,TRUE,TRUE
+structural system,wall,partition wall,TRUE,TRUE,TRUE,TRUE
+structural system,wall,curtain wall,TRUE,TRUE,TRUE,TRUE
+structural system,cladding,wall cladding,TRUE,TRUE,TRUE,TRUE
+structural system,roofing,roofing,TRUE,TRUE,TRUE,TRUE
+structural system,roofing,insulation,TRUE,TRUE,TRUE,TRUE
+structural system,roofing,ceiling,TRUE,TRUE,TRUE,TRUE
+structural system,floor,subfloor,TRUE,TRUE,TRUE,TRUE
+structural system,floor,flooring,TRUE,TRUE,TRUE,TRUE
+structural system,floor,underlayment,TRUE,TRUE,TRUE,TRUE
+structural system,insulation,wall insulation,TRUE,TRUE,TRUE,TRUE
+structural system,insulation,roofing insulation,TRUE,TRUE,TRUE,TRUE
+structural system,insulation,floor insulation,TRUE,TRUE,TRUE,TRUE
+structural system,window and door,window,TRUE,TRUE,TRUE,TRUE
+structural system,window and door,door,TRUE,TRUE,TRUE,TRUE
+structural system,staircase,stair stringer,TRUE,TRUE,TRUE,TRUE
+structural system,staircase,treads and risers,TRUE,TRUE,TRUE,TRUE
+structural system,staircase,handrail,TRUE,TRUE,TRUE,TRUE

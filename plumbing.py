@@ -173,7 +173,7 @@ def estimate_shower_materials(num_showers, weight_per_shower):
     Returns:
     dict: A dictionary containing the estimated weight of each material in the showers.
     """
-    material_pct = {'glass': 0.50, 'plastic': 0.30, 'stainless steel': 0.20}
+    material_pct = {'acrylic': 0.90, 'plastic': 0.05, 'stainless steel': 0.05}
     material_weights = {material: weight_per_shower * pct * num_showers for material, pct in material_pct.items()}
     return material_weights
 

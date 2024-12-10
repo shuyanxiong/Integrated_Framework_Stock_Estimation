@@ -24,8 +24,8 @@ plumbing system,drainage and waste pipes,water pipe,TRUE,TRUE,TRUE,TRUE
 plumbing system,water heaters,boiler,TRUE,TRUE,TRUE,TRUE
 plumbing system,plumbing fixtures,toilet,TRUE,TRUE,TRUE,TRUE
 plumbing system,plumbing fixtures,sink,TRUE,TRUE,TRUE,TRUE
-plumbing system,plumbing fixtures,shower,TRUE,TRUE,TRUE,TRUE
-plumbing system,plumbing fixtures,bathtub,TRUE,TRUE,TRUE,TRUE
+plumbing system,plumbing fixtures,shower,FALSE,FALSE,TRUE,FALSE
+plumbing system,plumbing fixtures,bathtub,FALSE,FALSE,TRUE,FALSE
 plumbing system,valves and controls,valve,TRUE,TRUE,TRUE,TRUE
 plumbing system,valves and controls,pump,TRUE,TRUE,TRUE,TRUE
 electrical system,electrical wiring and cables,electrical cable,TRUE,TRUE,TRUE,TRUE

@@ -24,7 +24,8 @@ def decide_pipe_size(material):
         diameter = 2.54  # in cm
         wall_thickness = 0.15  # in cm
         return diameter, wall_thickness
-    
+
+# residential buildings    
 # assuming duct length in each room is half perimeter of the rooms with water supply 
 # assuming distance from main water supply pipe to the furthest room is half perimeter of the building
 def calculate_water_pipe_length_per_apartment(num_rooms, num_kitchens,living_space):
@@ -85,6 +86,31 @@ def pipe_size_cm(residents_per_floor, number_of_floors):
     else:
         return 2.54
 
+# other buildings
+def calculate_water_pipe_length_general_buildings(building_area, supply_points, avg_distance_to_supply=10, fitting_factor=0.15):
+    """
+    Estimate water pipe length for non-residential buildings.
+
+    Parameters:
+    building_area (float): Building area in square meters.
+    supply_points (int): Number of water supply points (e.g., sinks, toilets).
+    avg_distance_to_supply (float): Average distance from the main supply pipe to supply points (default: 10m).
+    fitting_factor (float): Adjustment factor for layout inefficiencies (default: 0.15).
+
+    Returns:
+    float: Estimated total water pipe length in meters.
+    """
+    # Base pipe length from main supply to each supply point
+    base_pipe_length = supply_points * avg_distance_to_supply
+    
+    # Add perimeter pipe length for connecting main supply
+    perimeter_pipe_length = (building_area**0.5) * 2  # Assuming a rectangular layout
+    
+    # Apply fitting factor
+    total_pipe_length = (base_pipe_length + perimeter_pipe_length) * (1 + fitting_factor)
+    
+    return total_pipe_length
+
 
 def calculate_water_pipe_weight(pipe_length, density, diameter, wall_thickness):
     inner_diameter = diameter - 2 * wall_thickness
@@ -125,26 +151,41 @@ def dhw_boiler_capacity_kw(total_num_residents):
 
 # @ plumbing fixtures
 # assuming 1 toilet, 1 shower, 1 sink, 1 bathtub per bathroom
-# assuming 1 bathroom per 2 rooms
-def calculate_num_bathroom(num_rooms):
-    a = 2 # assume 1 bathroom per 2 rooms
-    num_bathrooms = np.floor(num_rooms/a)
-    return num_bathrooms
-
-import numpy as np
-
-def calculate_num_bathroom(num_rooms):
+# assuming 1 bathroom per 2 rooms for residential buildings
+def calculate_num_bathrooms(num_rooms, building_type):
     """
-    Calculate the number of bathrooms based on the number of rooms.
+    Calculate the number of bathrooms based on the number of rooms and building type.
 
     Parameters:
     num_rooms (int): Number of rooms.
+    building_type (str): Type of building ('residential', 'commercial', 'institutional').
 
     Returns:
     int: Number of bathrooms.
     """
-    num_bathrooms = np.floor(num_rooms / 2)
-    return int(num_bathrooms)
+    if building_type == 'residential':
+        return max(1, num_rooms // 2)  # At least 1 bathroom, 1 per 2 rooms
+    elif building_type == 'commercial':
+        return max(1, num_rooms // 10)  # 1 per 10 rooms as a rough assumption
+    elif building_type == 'institutional':
+        return max(1, num_rooms // 10) 
+    else:
+        return 0 # No bathrooms for other building types
+
+# import numpy as np
+
+# def calculate_num_bathroom(num_rooms):
+#     """
+#     Calculate the number of bathrooms based on the number of rooms.
+
+#     Parameters:
+#     num_rooms (int): Number of rooms.
+
+#     Returns:
+#     int: Number of bathrooms.
+#     """
+#     num_bathrooms = np.floor(num_rooms / 2)
+#     return int(num_bathrooms)
 
 
 def estimate_toilet_materials(num_toilets, weight_per_toilet):

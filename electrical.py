@@ -94,9 +94,10 @@ def estimate_electrical_cable_materials(weight):
 
     # Copper Wire without insulation of size 300mm2
     # Weight of the single bare copper wire of 300mm2 (without insulation) = 2627kg/km
+    # 2.5mm2 22.4g/m and 50g/m with insulation
     material_pct = {
-        'copper': 0.025,
-        'pvc': 0.975
+        'copper': 0.45,
+        'pvc': 0.55
     }
     
     # Calculate estimated material weights based on percentages

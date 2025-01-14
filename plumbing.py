@@ -199,7 +199,7 @@ def estimate_toilet_materials(num_toilets, weight_per_toilet):
     Returns:
     dict: A dictionary containing the estimated weight of each material in the toilets.
     """
-    material_pct = {'porcelain': 0.85, 'plastic': 0.10, 'stainless steel': 0.05}
+    material_pct = {'porcelain': 0.85, 'plastic': 0.07, 'stainless steel': 0.08}
     material_weights = {material: weight_per_toilet * pct * num_toilets for material, pct in material_pct.items()}
     return material_weights
 
@@ -214,11 +214,11 @@ def estimate_shower_materials(num_showers, weight_per_shower):
     Returns:
     dict: A dictionary containing the estimated weight of each material in the showers.
     """
-    material_pct = {'acrylic': 0.90, 'plastic': 0.05, 'stainless steel': 0.05}
+    material_pct = {'acrylic': 0.20, 'fiberglass': 0.30, 'polyester resin':0.40, 'steel': 0.10} 
     material_weights = {material: weight_per_shower * pct * num_showers for material, pct in material_pct.items()}
     return material_weights
 
-def estimate_sink_materials(num_sinks, weight_per_sink):
+def estimate_bath_sink_materials(num_sinks, weight_per_sink):
     """
     Estimate the materials needed for sinks.
 
@@ -229,7 +229,22 @@ def estimate_sink_materials(num_sinks, weight_per_sink):
     Returns:
     dict: A dictionary containing the estimated weight of each material in the sinks.
     """
-    material_pct = {'porcelain': 0.70, 'plastic': 0.20, 'stainless steel': 0.10}
+    material_pct = {'porcelain': 0.90, 'plastic': 0.10}
+    material_weights = {material: weight_per_sink * pct * num_sinks for material, pct in material_pct.items()}
+    return material_weights
+
+def estimate_kitchen_sink_materials(num_sinks, weight_per_sink):
+    """
+    Estimate the materials needed for sinks.
+
+    Parameters:
+    num_sinks (int): Number of sinks.
+    weight_per_sink (float): Weight of one sink in kilograms.
+
+    Returns:
+    dict: A dictionary containing the estimated weight of each material in the sinks.
+    """
+    material_pct = {'stainless steel': 1.00}
     material_weights = {material: weight_per_sink * pct * num_sinks for material, pct in material_pct.items()}
     return material_weights
 
@@ -244,6 +259,6 @@ def estimate_bathtub_materials(num_bathtubs, weight_per_bathtub):
     Returns:
     dict: A dictionary containing the estimated weight of each material in the bathtubs.
     """
-    material_pct = {'acrylic': 0.80, 'plastic': 0.10, 'cast iron': 0.10}
+    material_pct = {'acrylic': 0.30, 'fiberglass': 0.30, 'polyester resin':0.30, 'steel': 0.10} 
     material_weights = {material: weight_per_bathtub * pct * num_bathtubs for material, pct in material_pct.items()}
     return material_weights

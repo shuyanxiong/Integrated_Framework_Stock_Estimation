@@ -1,0 +1,56 @@
+building class,material,material_weight
+commercial,aluminum,1162136.9204747574
+commercial,brass,162561.52700000003
+commercial,copper,68107544.45382465
+commercial,fiberglass,136021.31646845757
+commercial,mineral wool,2881939.549670877
+commercial,other electronics,81280.76350000002
+commercial,pex,425243.3286009461
+commercial,plastic,10048402.085223075
+commercial,polyurethane foam,2607484.4171772655
+commercial,porcelain,97893723.0
+commercial,pvc,60179062.900198765
+commercial,refrigerant,21173.773813012896
+commercial,steel,41654399.36469866
+commercial,zinc coating,202382.79256314412
+institutional,aluminum,791680.2687200758
+institutional,brass,57210.99100000001
+institutional,copper,11873173.028038068
+institutional,fiberglass,98667.97357873595
+institutional,mineral wool,1201446.909170329
+institutional,other electronics,28605.495500000005
+institutional,pex,146558.9102136309
+institutional,plastic,2782239.2626034105
+institutional,polyurethane foam,1998291.5179956849
+institutional,porcelain,16504900.5
+institutional,pvc,9791472.206520861
+institutional,refrigerant,9727.25813305979
+institutional,steel,9613961.84400413
+institutional,zinc coating,30932.10698787159
+other,aluminum,334260.0256858148
+other,brass,196905.97000000003
+other,copper,370938729.1814023
+other,mineral wool,492264.92500000005
+other,other electronics,98452.98500000002
+other,pex,378841.00017613795
+other,plastic,560941.9528429074
+other,pvc,441079814.87050617
+other,refrigerant,34338.5139214537
+other,steel,13000785.369450929
+other,zinc coating,54307.49390909849
+residential,acrylic,161550240.0
+residential,aluminum,6523484.255953107
+residential,brass,1531591.8260000001
+residential,cast iron,169886.25
+residential,copper,152847098.6805634
+residential,fiberglass,181744020.0
+residential,mineral wool,3828979.5650000004
+residential,other electronics,765795.9130000001
+residential,pex,7701731.553820219
+residential,plastic,27369308.679976553
+residential,polyester resin,201937800.0
+residential,porcelain,205981740.0
+residential,pvc,66584533.04596736
+residential,refrigerant,1247973.1074882767
+residential,steel,294062028.1075155
+residential,zinc coating,1184870.5881828035

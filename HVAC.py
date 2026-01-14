@@ -1,28 +1,74 @@
 import math
 import numpy as np
 
-# @ Raditor
-# calculate the number of radiators needed for each apartment
-def calculate_radiators_per_apartment(heated_area, num_rooms,num_kitchens): 
-    a = 1 # assume 1 radiator per room
-    # # calculate the heat loss rate based on the insulation level
-    # if insulation == "poor":
-    #     heat_loss_rate = 100
-    # elif insulation == "average":
-    #     heat_loss_rate = 80
-    # else:
-    #     heat_loss_rate = 60
-    heat_loss_rate = 80
-    # calculate the total heat loss for the property
-    total_heat_loss = heated_area * heat_loss_rate
-    radiator_capacity = 1500
-    # calculate the number of radiators needed based on the heating system's capacity
-    num_radiators = np.ceil(total_heat_loss / radiator_capacity)  # assuming a heating system capacity of 1.5 kW per radiator
+# # @ Raditor
+# # calculate the number of radiators needed for each apartment
+# def calculate_radiators_per_apartment(heated_area, num_rooms,num_kitchens): 
+#     a = 1 # assume 1 radiator per room
+#     # # calculate the heat loss rate based on the insulation level
+#     # if insulation == "poor":
+#     #     heat_loss_rate = 100
+#     # elif insulation == "average":
+#     #     heat_loss_rate = 80
+#     # else:
+#     #     heat_loss_rate = 60
+#     heat_loss_rate = 80
+#     # calculate the total heat loss for the property
+#     total_heat_loss = heated_area * heat_loss_rate
+#     radiator_capacity = 1500
+#     # calculate the number of radiators needed based on the heating system's capacity
+#     num_radiators = np.ceil(total_heat_loss / radiator_capacity)  # assuming a heating system capacity of 1.5 kW per radiator
 
-    # calculate the total number of radiators needed
-    # assume 1 radiator per bedroom, bathroom, living room and kitchen
-    total_num_radiators = a * num_rooms + num_kitchens
-    return int(np.max([total_num_radiators, num_radiators])) # round up the number of radiators to the nearest integer
+#     # calculate the total number of radiators needed
+#     # assume 1 radiator per bedroom, bathroom, living room and kitchen
+#     total_num_radiators = a * num_rooms + num_kitchens
+#     return int(np.max([total_num_radiators, num_radiators])) # round up the number of radiators to the nearest integer
+# import numpy as np
+
+# @ Radiator
+# calculate the number of radiators needed for each apartment
+def calculate_radiators_per_apartment(heated_area, num_rooms, num_kitchens):
+    """
+    Same I/O as your original function:
+      inputs: heated_area (m2), num_rooms, num_kitchens
+      output: int number of radiators
+
+    Cross-validation idea:
+      - n_room: layout / practice-based estimate (rooms + kitchens)
+      - n_heat: coarse heat-demand-density estimate (W/m2 -> total W / W_per_radiator)
+      - If they disagree strongly, allow a limited uplift above room-based,
+        rather than blindly taking max or min.
+    """
+
+    # --- 1) Room/layout based (typical installation practice, good for stock) ---
+    n_room = int(num_rooms) + int(num_kitchens)  # keep exactly your original rule basis
+
+    # --- 2) Heat-based (coarse proxy; NOT full heat-loss model) ---
+    heat_demand_density = 80   # W/m2 (your original value; consider 50–80 depending on stock)
+    radiator_capacity = 1500   # W per radiator (depends on water temps; keep as your original)
+
+    if heated_area is None or heated_area <= 0:
+        n_heat = 0
+    else:
+        total_w = float(heated_area) * float(heat_demand_density)
+        n_heat = int(np.ceil(total_w / float(radiator_capacity)))
+
+    # --- 3) Cross-check + merge (single output) ---
+    # Use room-based as baseline (stock realism), but prevent big underestimation:
+    # allow heat-based to increase the count, capped to avoid blow-ups from uncertain assumptions.
+    cap_extra = 2  # allow at most +2 radiators beyond n_room
+    gap_threshold = 2  # if mismatch >=2, treat as notable disagreement
+
+    if abs(n_heat - n_room) < gap_threshold:
+        # close enough -> trust the simpler rule-based estimate
+        n_final = n_room
+    else:
+        # disagreement -> take a conservative uplift, but cap it
+        n_final = min(max(n_room, n_heat), n_room + cap_extra)
+
+    # make sure it's at least 0
+    return int(max(n_final, 0))
+
 
 # def estimate_materials_radiator(weight_kg):
 #     material_pct = {
@@ -349,6 +395,7 @@ def estimate_HVAC_pipe_materials(weight_kg, material_pct):
     """
     material_weights = {material: weight_kg * pct for material, pct in material_pct.items()}
     return material_weights
+
 
 
 

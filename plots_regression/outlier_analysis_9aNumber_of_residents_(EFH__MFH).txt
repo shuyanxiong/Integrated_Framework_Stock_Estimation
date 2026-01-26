@@ -1,5 +1,0 @@
-Total data points: 19067
-Outliers: 309 (1.62%)
-R-squared with all data: 0.4673
-R-squared without outliers: 0.7820
-R-squared with 5-95th percentile data: -0.0740
